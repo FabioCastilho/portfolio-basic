@@ -14,6 +14,10 @@
   --highlight-color: #1DB954;
   --highlight-hover-color: #1ed760;
   --card-bg-color: #1e1e1e;
+  --html-color: #E34F26;
+  --css-color: #1572B6;
+  --js-color: #F7DF1E;
+  --java-color: #007396;
 }
 
 body {
@@ -210,6 +214,19 @@ body::before {
     align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
+
+}
+.projeto p {
+    padding: 0 1rem 1rem 1rem;
+    color: var(--text-color-secondary);
+    font-size: 0.9em;
+    line-height: 1.4;
+    flex-grow: 1;
+}
+
+.projeto h3 {
+    font-size: 1.1em;
+    margin-bottom: 0.5rem;
 }
 
 .projeto {
@@ -221,9 +238,47 @@ body::before {
     background-color: var(--card-bg-color);
     border-radius: 5px;
     width: 250px;
-    min-height: 280px;
+    min-height: 290px;
+    max-height: 290px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.tecnologias {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+
+}
+
+.tecnologias button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7em;
+    padding: 0.2rem 0.5rem;
+    border: none;
+    border-radius: 50px;
+    margin-top: -5px;
+}
+
+button.html {
+    background-color: var(--html-color);
+    color: white;
+
+}
+button.css {
+    background-color: var(--css-color);
+    color: white;
+}
+button.js {
+    background-color: var(--js-color);
+    color: black;
+}
+button.java {
+    background-color: var(--java-color);
+    color: white;
 }
 
 .projeto img {
@@ -340,4 +395,28 @@ h2::after {
   margin-right: 10px;
   width: 24px;
   height: 24px;
+}
+
+
+
+@media (max-width: 576px) {
+  body {
+    font-size: 15px;
+  }
+
+.header {
+        flex-direction: column;
+    }
+
+    .projeto {
+        width: 100%;
+        min-height: 350px;
+    }
+}
+
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
 }
