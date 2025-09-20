@@ -18,6 +18,8 @@
   --css-color: #1572B6;
   --js-color: #F7DF1E;
   --java-color: #007396;
+  --ps-color: #31A8FF;
+  --ai-color: #FF9A00;
 }
 
 body {
@@ -216,18 +218,28 @@ body::before {
     flex-wrap: wrap;
 
 }
+
+.projetos-area a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+}
+
 .projeto p {
-    padding: 0 1rem 1rem 1rem;
     color: var(--text-color-secondary);
     font-size: 0.9em;
     line-height: 1.4;
     flex-grow: 1;
+    text-decoration: none;
+    color: inherit;
 }
 
 .projeto h3 {
     font-size: 1.1em;
     margin-bottom: 0.5rem;
+    color: inherit;
 }
+
 
 .projeto {
     display: flex;
@@ -243,6 +255,7 @@ body::before {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .tecnologias {
@@ -250,7 +263,8 @@ body::before {
     justify-content: center;
     gap: 0.5rem;
     flex-wrap: wrap;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    margin-top: 0 auto;
 
 }
 
@@ -278,6 +292,15 @@ button.js {
 }
 button.java {
     background-color: var(--java-color);
+    color: white;
+}
+
+button.ps {
+    background-color: var(--ps-color);
+    color: white;
+}
+button.ai {
+    background-color: var(--ai-color);
     color: white;
 }
 
